@@ -4,6 +4,8 @@
 
 ## Update
 
+NOTE: The live upstream repository is at https://github.com/ib-api-reloaded/ib_async and this is just my local fork for historical purposes.
+
 Under new management. See [original discussions](https://github.com/mattsta/ib_insync/discussions) for recent history. Create new discussions or PRs or issues under [the new primary repo](https://github.com/ib-api-reloaded/ib_async) for ongoing updates.
 
 New contributions welcome. We are open to adding more maintainers with commit access if your updates and understanding of IBKR/TWS and Python are all high quality.
