@@ -72,7 +72,7 @@ class FlexReport:
             f"/Universal/servlet/FlexStatementService.SendRequest?"
             f"t={token}&q={queryId}&v=3"
         )
-        resp = urlopen(url)
+        resp = urlopen(url, timeout=30)
         data = resp.read()
 
         root = et.fromstring(data)
@@ -95,7 +95,7 @@ class FlexReport:
         while True:
             time.sleep(1)
             url = f"{baseUrl}?q={code}&t={token}"
-            resp = urlopen(url)
+            resp = urlopen(url, timeout=30)
             self.data = resp.read()
             self.root = et.fromstring(self.data)
             if self.root[0].tag == "code":
